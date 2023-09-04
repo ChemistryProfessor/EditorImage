@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <!-- style Link -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container disable">
+        <h2>Easy Image Editor</h2>
+        <div class="wrapper">
+            <div class="editor-panel">
+                <div class="filter">
+                    <lable class="title">Filters</lable>
+                    <div class="options">
+                        <button id="brightness" class="active">Brightness</button>
+                        <button id="seturation">Seturation</button>
+                        <button id="inversion">Inversion</button>
+                        <button id="grayscale">Grayscale</button>
+                    </div>
+                    <div class="slider">
+                        <div class="filter-info">
+                            <p class="name">Brightness</p>
+                            <p class="value">100%</p>
+                        </div>
+                        <input type="range" value="100" min="0" max="200">
+                    </div>
+                </div>
+                <div class="rotate">
+                    <lable class="title">Rotate & Flip</lable>
+                    <div class="options">
+                        <button id="left"><i class="ri-arrow-go-back-fill"></i></button>
+                        <button id="right"><i class="ri-arrow-go-forward-fill"></i></button>
+                        <button id="horizontal"><i class="ri-contract-left-right-fill"></i></button>
+                        <button id="vertical"><i class="ri-contract-up-down-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="preview-img">
+                <img src="images/20230903215448_[fpdl.in]_default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093_full.jpg" alt="pereview-img">
+            </div>
+        </div>
+        <div class="controls">
+            <button class="reset-filter">Reset Filters</button>
+            <div class="row">
+                <input type="file" class="file-input" hidden>
+                <!-- <input type="file" class="file-input" accept="image/*"> -->
+                <button class="choose-img">Choose Image</button>
+                <button class="save-img">Save Image</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- script link -->
+    <script src="app.js"></script>
+</body>
+</html>
